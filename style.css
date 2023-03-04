@@ -1,0 +1,71 @@
+@font-face{
+    font-family:'Pixel';
+    src: url('fontes/OTF/dogicapixel.otf') format('opentype'), url('fontes/TTF/dogicapixel.ttf') format('truetype');
+
+
+}
+body{
+    background-color: rgb(2, 2, 2);
+}
+#body{
+    height: 100vh;
+    background-color: grey;
+    background-image: url('imagens/telaInicial.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-position: cover;
+    background-size: 100% 100%;
+}
+#status{
+    background-color: black;
+}
+
+#ng{
+    color: white;
+    border: 5px black;
+    font-family: 'Pixel';
+    font-size: 30px;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+#ng:hover{
+    text-decoration: none;
+    color: white;
+    font-size: 40px;    
+}
+/*Pagina de status*/
+#status{
+    background-color: black;
+}
+#status>div{
+    background-image: linear-gradient(90deg, darkblue, black);
+    border: 3px solid gray;
+}
+#box1{
+    color: white;
+    font-family: 'Pixel';
+    border: 2px solid black;
+    display: inline-block;
+}
+#box2{
+    color: white;
+    margin: 0px 200px;
+    font-family: 'pixel';
+    border: 2px solid black;
+    display: inline-block;
+}
+#box3{
+    color: white;
+    font-family: 'pixel';
+    border: 2px solid black;
+    display: inline-block;
+}
+#lateral{
+    padding: 30px 0px;
+    display: inline-table;
+    border: 2px solid grey;
+    color: white;
+    font-family: 'pixel';
+}
