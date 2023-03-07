@@ -16,11 +16,17 @@ body{
     background-position: cover;
     background-size: 100% 100%;
 }
+main{
+padding: 10px;
+margin: auto;
+border-radius: 15px;
+}
 #status{
     background-color: black;
 }
 
 #ng{
+    text-align: center;
     color: white;
     border: 5px black;
     font-family: 'Pixel';
@@ -37,32 +43,45 @@ a{
 }
 /*Pagina de status*/
 #status{
-    background-color: black;
+    background-color: rgb(0, 0, 0);
 }
 #status>div{
-    background-image: linear-gradient(90deg, darkblue, black);
+    background-image: linear-gradient(to right , darkorange, black);
     border: 3px solid gray;
+    border-radius: 15px;
 }
 #box1{
     color: white;
     font-family: 'Pixel';
-    border: 2px solid black;
+    border: 2px solid rgba(0, 0, 0, 0);
     display: inline-block;
 }
 #box2{
     color: white;
     margin: 0px 200px;
     font-family: 'pixel';
-    border: 2px solid black;
+    border: 2px solid rgba(0, 0, 0, 0);
     display: inline-block;
+}
+#box2>#vida{
+    border: 3px solid green;
+    
+}
+#box2>#mana{
+    border: 3px solid blue;
+    
+}
+#box2>h4{
+    margin: 10px;
 }
 #box3{
     color: white;
     font-family: 'pixel';
-    border: 2px solid black;
+    border: 2px solid rgba(0, 0, 0, 0);
     display: inline-block;
 }
 #lateral{
+    
     padding: 30px 0px;
     display: inline-table;
     border: 2px solid grey;
