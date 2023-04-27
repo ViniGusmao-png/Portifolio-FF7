@@ -5,20 +5,22 @@
 
 }
 
+* {
+    font-family: 'pixel';
+    color: white;
+}
+
 body {
     background-color: rgb(255, 255, 255);
 }
 
-#body {
-    height: 100vh;
-    background-color: grey;
-    background-image: url('imagens/logo.jpeg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-position: cover;
-    background-size: 100% 100%;
-    background-attachment: fixed;
-    position: relative;
+.image-container {
+    text-align: center;
+}
+
+.image-container>img {
+    width: 50vw;
+    max-width: 100%;
 }
 
 main {
@@ -39,12 +41,11 @@ main {
     font-size: 30px;
     left: 50%;
     top: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
 }
 
 a {
-    
-    color:rgb(212, 118, 11);
+    color: rgb(212, 118, 11);
     text-decoration: none;
 }
 
@@ -60,43 +61,43 @@ a {
 }
 
 #status>div {
-    background-image: linear-gradient(to right, darkorange, black);
+    height: 600px;
+    background-image: linear-gradient(to left, blue, rgb(3, 3, 61));
     border: 3px solid gray;
     border-radius: 15px;
-    display: inline-block;
 }
 
-#box1 {
-    width: 400px;
-    color: white;
-    font-family: 'Pixel';
-    border: 2px solid rgba(0, 0, 0, 0);
-    display: inline-block;
+.flex-container {
+    margin: 5px 0px;
+    text-align: left;
+    display: inline-flex;
 }
 
 #box1>img {
-    margin: 30px 0px;
+    margin: 30px;
     width: 150px;
     border-radius: 15px;
 }
 
 #box2 {
-    color: white;
-    padding: 10px ;
-    margin: 5px 5px 5px 5px;
-    font-family: 'pixel';
-    border: 2px solid rgba(0, 0, 0, 0);
-    display: inline-block;
+    padding: 10px;
+    margin: 5px 20px 20px 5px;
+
+
 }
 
 #box2>#vida {
-    border: 3px solid green;
+    border: 4px solid;
+    border-image: linear-gradient(to right, green, rgb(255, 255, 255));
+    border-image-slice: 1;
 
 }
 
 #box2>#mana {
-    border: 3px solid blue;
 
+    border: 4px solid;
+    border-image: linear-gradient(to right, rgb(47, 0, 255), rgb(255, 255, 255));
+    border-image-slice: 1;
 }
 
 #box2>h4 {
@@ -104,17 +105,27 @@ a {
 }
 
 #box3 {
-    color: white;
-    font-family: 'pixel';
-    border: 2px solid rgba(0, 0, 0, 0);
-    display: inline-block;
+    padding: 10px;
+    margin: 15px 5px 5px 30px;
+
 }
 
-#lateral {
+#exp {
+    margin-top: 30px;
+    border: 10px solid;
+    border-image: linear-gradient(to right, #ff9966, #ff5e62);
+    border-image-slice: 1;
+}
 
-    padding: 28px 0px;
-    display: inline-table;
-    border: 2px solid grey;
-    color: white;
-    font-family: 'pixel';
+#limit {
+    margin-top: 30px;
+    border: 10px solid;
+    border-image: linear-gradient(to right, #ff9966, #ff5e62);
+    border-image-slice: 1;
+}
+
+#equip {
+    padding: auto;
+    width: 150px;
+    margin: auto;
 }
